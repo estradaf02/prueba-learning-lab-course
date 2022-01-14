@@ -1,0 +1,16 @@
+title: Prueba Learning Lab
+description: Curso de Prueba
+template:
+  repo: prueba-learning-lab-template
+  name: prueba-learning-lab
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
